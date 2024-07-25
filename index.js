@@ -28,6 +28,11 @@ app.get('/records', async (req, res) => {
     res.status(500).json({ error: error.message });
   }
 });
+app.get('/', async (req, res) => {
+ 
+    res.status(200).json({ data:" Yahoooo!" });
+ 
+});
 
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
